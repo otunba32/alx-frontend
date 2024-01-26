@@ -516,3 +516,10 @@ a:active {
 .footer {
     padding: var(--footer-padding);
 }
+
+/* CSS rule that creates a new row after each instance of the class row */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
